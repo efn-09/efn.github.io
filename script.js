@@ -39,9 +39,9 @@ document.querySelector(".tombol").addEventListener('click', function () {
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
-              Swal.fire(`Aku juga sayang banget sama ${nama}`).then(function () {
+              Swal.fire(`Aku juga sayang banget sama kamu ${nama}`).then(function () {
                 Swal.fire({
-                  title: 'Seberapa sayang emangnya?',
+                  title: 'Seberapa banyakk sayangnyaa?',
                   icon: 'question',
                   input: 'range',
                   inputLabel: 'Antara 1 - 100 ya',
@@ -63,14 +63,14 @@ document.querySelector(".tombol").addEventListener('click', function () {
                     }).then((result) => {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
-                        Swal.fire(`Huhu iya aku juga kangen ${nama} , makasihhh yaa`).then(function () {
-                          Swal.fire('Terakhir deh sayang').then(function () {
+                        Swal.fire(`Huhu iya aku juga kangen kamu ${nama} , makasihhh yaa >_<`).then(function () {
+                          Swal.fire('Terakhir dehh bebby').then(function () {
                             Swal.fire('Coba klik ikon hati di paling bawah dong')
                           })
                         })
                       } else if (result.isDenied) {
-                        Swal.fire('yahhh , emang ga kangen sama pacar sendiri', '', 'error').then(function () {
-                          Swal.fire('Yaudah deh okee sayangg :((')
+                        Swal.fire('Yahhh, Emang ga kangen sama bebebb sendiri?', '', 'error').then(function () {
+                          Swal.fire('Yaudah deh okee bebby :( ')
                         })
                       }
                     })
@@ -78,8 +78,8 @@ document.querySelector(".tombol").addEventListener('click', function () {
                 })
               })
             } else if (result.isDenied) {
-              Swal.fire(`Yakin ga suka sama aku?`, '', 'error').then(function () {
-                Swal.fire('Yaudah dehh okee sayang :((')
+              Swal.fire('Yakin ga suka sama aku?', '', 'error').then(function () {
+                Swal.fire('Yaudaa deh okee bebby :((')
               })
             }
           })
